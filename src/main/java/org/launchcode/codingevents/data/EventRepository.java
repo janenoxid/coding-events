@@ -10,3 +10,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface EventRepository extends CrudRepository<Event, Integer> {
 }
+

@@ -25,7 +25,7 @@ public class Event extends AbstractEntity {
     private String contactEmail;
 
     @ManyToOne
-    @NotNull
+    @NotNull(message = "Category is required")
     private EventCategory eventCategory;
 
     public Event(String name, String description, String contactEmail, EventCategory eventCategory) {

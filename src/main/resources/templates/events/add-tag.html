@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<form method="post">
+    <div class="form-group">
+
+        <select th:field="${eventTag.tag}"></select>
+        <opt
+    </div>
+    <input type="submit" class="btn btn-success" value="Add Tag">
+</form>
+
+
+</body>
+</html>

@@ -7,9 +7,14 @@
 
 <form method="post">
     <div class="form-group">
+        <input type="hidden" th:field="${eventTag.event}">
+        <select th:field="${eventTag.tag}">
+            <option th:each="tag : ${tags}"
+                    th:value="${tag.id}"
+                    th:text="${tag.name}"
+            ></option>
+        </select>
 
-        <select th:field="${eventTag.tag}"></select>
-        <opt
     </div>
     <input type="submit" class="btn btn-success" value="Add Tag">
 </form>
